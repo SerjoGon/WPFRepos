@@ -5,8 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFonCSharp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Калькулятор" Height="450" Width="600" FontSize="20">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="tb_globalResult" IsReadOnly="True" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" Height="50" Margin="5,10" TextAlignment="Right"/>
+        <TextBox x:Name="tb_currentResult" IsReadOnly="True" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Margin="5,10" TextAlignment="Right"/>
+        
+        <Button x:Name="btn_currentClear" Grid.Column="0" Grid.Row="2" Margin="5" Content="CE" Click="btn_currentClear_Click"/>
+        <Button x:Name="btn_globalClear" Grid.Column="1" Grid.Row="2" Margin="5" Content="C" Click="btn_globalClear_Click"/>
+        <Button x:Name="btn_lastcharDelete" Grid.Column="2" Grid.Row="2" Margin="5" Content="&lt;" Click="btn_lastcharDelete_Click"/>
+        <Button x:Name="btn_divide" Grid.Column="3" Grid.Row="2" Margin="5" Content="/" Click="btn_divide_Click"/>
 
+        <Button x:Name="btn_seven" Grid.Column="0" Grid.Row="3" Margin="5" Content="7" Click="btn_seven_Click"/>
+        <Button x:Name="btn_eight" Grid.Column="1" Grid.Row="3" Margin="5" Content="8" Click="btn_eight_Click"/>
+        <Button x:Name="btn_nine" Grid.Column="2" Grid.Row="3" Margin="5" Content="9" Click="btn_nine_Click"/>
+        <Button x:Name="btn_multiple" Grid.Column="3" Grid.Row="3" Margin="5" Content="*" Click="btn_multiple_Click"/>
+
+        <Button x:Name="btn_four" Grid.Column="0" Grid.Row="4" Margin="5" Content="4" Click="btn_four_Click"/>
+        <Button x:Name="btn_five" Grid.Column="1" Grid.Row="4" Margin="5" Content="5" Click="btn_five_Click"/>
+        <Button x:Name="btn_six" Grid.Column="2" Grid.Row="4" Margin="5" Content="6" Click="btn_six_Click"/>
+        <Button x:Name="btn_sub" Grid.Column="3" Grid.Row="4" Margin="5" Content="-" Click="btn_sub_Click"/>
+
+        <Button x:Name="btn_one" Grid.Column="0" Grid.Row="5" Margin="5" Content="1" Click="btn_one_Click"/>
+        <Button x:Name="btn_two" Grid.Column="1" Grid.Row="5" Margin="5" Content="2" Click="btn_two_Click"/>
+        <Button x:Name="btn_three" Grid.Column="2" Grid.Row="5" Margin="5" Content="3" Click="btn_three_Click"/>
+        <Button x:Name="btn_add" Grid.Column="3" Grid.Row="5" Margin="5" Content="+" Click="btn_add_Click"/>
+
+        <Button x:Name="btn_point" Grid.Column="0" Grid.Row="6" Margin="5" Content="." Click="btn_point_Click"/>
+        <Button x:Name="btn_zero" Grid.Column="1" Grid.Row="6" Margin="5" Content="0" Click="btn_zero_Click"/>
+        <Button x:Name="btn_equal" Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="2" Margin="5" Content="="/>
     </Grid>
 </Window>
