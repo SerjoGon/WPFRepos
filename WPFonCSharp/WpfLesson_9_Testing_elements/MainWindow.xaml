@@ -49,7 +49,7 @@
                         </ProgressBar.Effect>
 
                     </ProgressBar>
-                    <Slider x:Name="Sli" Grid.Column="2" HorizontalAlignment="Left" Margin="27,165,0,0" VerticalAlignment="Top" Width="221" SmallChange="1">
+                    <Slider x:Name="Sli" Grid.Column="2" HorizontalAlignment="Left" Margin="27,165,0,0" VerticalAlignment="Top" Width="221" SmallChange="1" Maximum="25" Minimum="5" Ticks="5 10 15 20 25" Value="5" TickPlacement="BottomRight" ValueChanged="Sli_ValueChanged">
                         <Slider.Effect>
                             <DropShadowEffect/>
                         </Slider.Effect>

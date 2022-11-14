@@ -54,5 +54,10 @@ namespace WpfLesson_9_Testing_elements
                 Pb.Value = i;
             }
         }
+
+        private void Sli_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            //Gb.Height = e.NewValue * 100;
+        }
     }
 }
