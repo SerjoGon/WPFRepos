@@ -48,11 +48,11 @@
                 </MenuItem>
                 <MenuItem x:Name="main_mi_statusBarShow" Header="Status bar"></MenuItem>
             </MenuItem>
-            <MenuItem x:Name="main_mi_about" Header="About" />
+            <MenuItem x:Name="main_mi_about" Header="About" Click="main_mi_about_Click" />
         </Menu>
         <ToolBarTray DockPanel.Dock="Top" Height="20">
         </ToolBarTray>
-        <StatusBar DockPanel.Dock="Bottom">
+        <StatusBar x:Name="stat_bar" DockPanel.Dock="Bottom">
             <TextBlock x:Name="sb_lines">Ln 1</TextBlock>
             <Separator></Separator>
             <TextBlock x:Name="sb_columns">Col 1</TextBlock>
