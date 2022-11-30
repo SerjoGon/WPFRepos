@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TextEditor"
         mc:Ignorable="d"
-        Title="Текстовый редактор" Height="450" Width="800">
+       Title="Текстовый редактор" Height="450" Width="800">
     <DockPanel LastChildFill="True">
         <Menu DockPanel.Dock="Top" IsMainMenu="True">
-            <MenuItem Header="File">
+            <MenuItem x:Name="main_mi_file" Header="File">
                 <MenuItem x:Name="main_mi_create" Header="Create" InputGestureText="Ctrl+N" Click="main_mi_create_Click"></MenuItem>
                 <MenuItem x:Name="main_mi_open" Header="Open" InputGestureText="Ctrl+O" Click="main_mi_open_Click"></MenuItem>
                 <MenuItem x:Name="main_mi_save" Header="Save" InputGestureText="Ctrl+S" Click="main_mi_save_Click"></MenuItem>
@@ -38,21 +38,22 @@
             </MenuItem>
             <MenuItem Header="Format">
                 <MenuItem x:Name="main_mi_wordWrap" Header="Wrap"></MenuItem>
-                <MenuItem x:Name="main_mi_fontShow" Header="Font"></MenuItem>
+                <MenuItem x:Name="main_mi_fontShow" Header="Font" Click="main_mi_fontShow_Click"></MenuItem>
             </MenuItem>
             <MenuItem Header="View">
                 <MenuItem Header="Scale">
-                    <MenuItem x:Name="main_mi_growScale" Header="Grow scale"></MenuItem>
-                    <MenuItem x:Name="main_mi_tinyScale" Header="Tiny scale"></MenuItem>
-                    <MenuItem x:Name="main_mi_defaultScale" Header="Default scale"></MenuItem>
+                    <MenuItem x:Name="main_mi_growScale" Header="Grow scale" Click="main_mi_growScale_Click"></MenuItem>
+                    <MenuItem x:Name="main_mi_tinyScale" Header="Tiny scale" Click="main_mi_tinyScale_Click"></MenuItem>
+                    <MenuItem x:Name="main_mi_defaultScale" Header="Default scale" Click="main_mi_defaultScale_Click"></MenuItem>
                 </MenuItem>
-                <MenuItem x:Name="main_mi_statusBarShow" Header="Status bar"></MenuItem>
+                <MenuItem x:Name="main_mi_statusBarShow" Header="Status bar" IsCheckable="True" IsChecked="True"  Click="main_mi_statusBarShow_Click"></MenuItem>
             </MenuItem>
             <MenuItem x:Name="main_mi_about" Header="About" Click="main_mi_about_Click" />
         </Menu>
-        <ToolBarTray DockPanel.Dock="Top" Height="20">
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>123</ToolBar>
         </ToolBarTray>
-        <StatusBar x:Name="stat_bar" DockPanel.Dock="Bottom">
+        <StatusBar x:Name="statusBar" DockPanel.Dock="Bottom">
             <TextBlock x:Name="sb_lines">Ln 1</TextBlock>
             <Separator></Separator>
             <TextBlock x:Name="sb_columns">Col 1</TextBlock>
@@ -61,7 +62,17 @@
             <Separator></Separator>
             <TextBlock x:Name="sb_tipText">Описание</TextBlock>
         </StatusBar>
-        <RichTextBox x:Name="rtb_editor" VerticalScrollBarVisibility="Auto" >
+        <RichTextBox FontSize="16" x:Name="rtb_editor" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" TextChanged="rtb_editor_TextChanged" AcceptsTab="True">
+            <FlowDocument>
+                <Paragraph>
+                    <Run FontFamily="Consolas">3656456</Run>
+                    <Run FontFamily="Arial">3656456</Run>
+                    <Run FontFamily="Verdana">3656456</Run>
+                </Paragraph>
+            </FlowDocument>
+            <RichTextBox.LayoutTransform>
+                <ScaleTransform x:Name="rtb_scale" ScaleX="1.0" ScaleY="1.0" />
+            </RichTextBox.LayoutTransform>
         </RichTextBox>
     </DockPanel>
 </Window>

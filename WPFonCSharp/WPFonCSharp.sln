@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFonCSharpCalculate", "WPF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfLesson_9_Testing_elements", "WpfLesson_9_Testing_elements\WpfLesson_9_Testing_elements.csproj", "{F6A109E8-6DA4-4661-96E3-2BD697A21237}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextEditor", "TextEditor\TextEditor.csproj", "{C1963055-9608-4BE6-9247-D41E9B94C71B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextEditor", "TextEditor\TextEditor.csproj", "{C1963055-9608-4BE6-9247-D41E9B94C71B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkers_CSharp_WPF", "Checkers_CSharp_WPF\Checkers_CSharp_WPF.csproj", "{7571ABA8-371C-4A0D-A5A6-C6067805F95F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{C1963055-9608-4BE6-9247-D41E9B94C71B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1963055-9608-4BE6-9247-D41E9B94C71B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1963055-9608-4BE6-9247-D41E9B94C71B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7571ABA8-371C-4A0D-A5A6-C6067805F95F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7571ABA8-371C-4A0D-A5A6-C6067805F95F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7571ABA8-371C-4A0D-A5A6-C6067805F95F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7571ABA8-371C-4A0D-A5A6-C6067805F95F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
