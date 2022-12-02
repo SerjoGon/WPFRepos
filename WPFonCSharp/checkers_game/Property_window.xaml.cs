@@ -15,34 +15,28 @@ using System.Windows.Shapes;
 namespace checkers_game
 {
     /// <summary>
-    /// Interaction logic for Property_window.xaml
+    /// Interaction logic for Window2.xaml
     /// </summary>
-    public partial class Property_window : Window
+    public partial class Window2 : Window
     {
-
         private Brush p1_color;
         private Brush p2_color;
         private int current_theme_index;
-
-        public Property_window()
+        public Window2()
         {
             InitializeComponent();
             p1_color = Brushes.Gold;
             p2_color = Brushes.Violet;
             current_theme_index = 0;
-
-            Combobox_theme.SelectedIndex = 0; // set preset index to 0
+            Combobox_theme.SelectedIndex = 0; 
         }
-
         private void return_home(object sender, RoutedEventArgs e)
         {
-            if (current_theme_index == 1)
+            if(current_theme_index == 1)
             {
                 p1_color = Brushes.Gold;
                 p2_color = Brushes.Silver;
-
-            }
-            else if (current_theme_index == 2)
+            }else if (current_theme_index == 2)
             {
                 p1_color = Brushes.Red;
                 p2_color = Brushes.DarkGray;
@@ -52,31 +46,26 @@ namespace checkers_game
                 p1_color = Brushes.Coral;
                 p2_color = Brushes.LightSeaGreen;
             }
-
             if (current_theme_index == 0)
             {
-                // if the theme was not changed from preset then call base constructor
+                // если тема не выбрана, вызывется базовый конструктор
                 Window1 window1 = new Window1();
-                this.Visibility = Visibility.Collapsed; // hide current window
-                window1.Show(); // show the home window obj
+                this.Visibility = Visibility.Collapsed; 
+                window1.Show(); 
                 this.Close();
             }
             else
             {
-                // if theme was changed then call overloaded constructor with new colors
-
-                Window1 window1 = new Window1(this.p1_color, this.p2_color);// make a new home window obj
-                this.Visibility = Visibility.Collapsed; // hide current window
-                window1.Show(); // show the home window obj
+                Window1 window1 = new Window1(this.p1_color, this.p2_color);
+                this.Visibility = Visibility.Collapsed; 
+                window1.Show();
                 this.Close();
             }
         }
-
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var comboBox = (ComboBox)sender; // get combobox object from sender
-
-            current_theme_index = comboBox.SelectedIndex; // get index of chosen combobox item
+            var comboBox = (ComboBox)sender; 
+            current_theme_index = comboBox.SelectedIndex; 
         }
     }
 }

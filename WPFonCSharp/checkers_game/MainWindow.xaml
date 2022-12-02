@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:checkers_game"
         mc:Ignorable="d"
-          Title="WPF Checkers" Height="800" MinHeight="800" MaxHeight="800" Width="800" MinWidth="800" MaxWidth="800" Background="{DynamicResource WindowBackgroundBrush}" Icon="WPFcheckerscover-PixTeller.ico" >
+        Title="WPF Checkers" Height="800" MinHeight="800" MaxHeight="800" Width="800" MinWidth="800" MaxWidth="800" Background="{DynamicResource WindowBackgroundBrush}" Icon="WPFcheckerscover-PixTeller.ico" >
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="FontSize" Value="70"/>
@@ -110,13 +110,11 @@
         </Grid>
 
         <Grid x:Name="side_panel" Margin="643,0,-33,0" Background="{DynamicResource side_grid_BackgroundBrush}" >
-            <Label x:Name ="p1_checkers" Content="Player 2" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="40" Margin="0,81,-0.2,0" VerticalAlignment="Top" Width="151"  />
-            <Label x:Name ="p2_checkers" Content="Player 1" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="40" Margin="0,657,-0.2,0" VerticalAlignment="Top" Width="151" />
+            <Label x:Name ="p1_checkers" Content="2-й игрок" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="40" Margin="0,81,-0.2,0" VerticalAlignment="Top" Width="151"  />
+            <Label x:Name ="p2_checkers" Content="1-й игрок " HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="40" Margin="0,657,-0.2,0" VerticalAlignment="Top" Width="151" FontSize="20" />
 
 
-            <TextBlock x:Name="current_player" TextWrapping="Wrap" TextAlignment="Center"  Height="100" Width="100" Margin="23,361,27.8,308.6">
-       Player 1 turn
-            </TextBlock>
+            <TextBlock x:Name="current_player" TextWrapping="Wrap" TextAlignment="Center"  Height="100" Width="100" Margin="23,361,27.8,308.6" Text="Ход первого игрока"/>
 
             <TextBlock x:Name ="p2_identifier"  HorizontalAlignment="Left" Margin="27,147,0,557.6" TextWrapping="Wrap" Text="•" FontSize="70" TextAlignment="Center"  Width="96"/>
             <TextBlock x:Name ="p1_identifier" HorizontalAlignment="Left"  Margin="27,536,0,153.6" TextWrapping="Wrap" Text="•" FontSize="70" TextAlignment="Center" Width="96"/>
