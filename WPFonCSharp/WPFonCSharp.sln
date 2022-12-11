@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfLesson_9_Testing_element
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextEditor", "TextEditor\TextEditor.csproj", "{C1963055-9608-4BE6-9247-D41E9B94C71B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFkeyboard_trainer_HW", "WPFkeyboard_trainer_HW\WPFkeyboard_trainer_HW.csproj", "{A9430E51-7530-4C65-BBB4-3B328E04E2C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C1963055-9608-4BE6-9247-D41E9B94C71B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1963055-9608-4BE6-9247-D41E9B94C71B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1963055-9608-4BE6-9247-D41E9B94C71B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9430E51-7530-4C65-BBB4-3B328E04E2C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9430E51-7530-4C65-BBB4-3B328E04E2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9430E51-7530-4C65-BBB4-3B328E04E2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9430E51-7530-4C65-BBB4-3B328E04E2C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
